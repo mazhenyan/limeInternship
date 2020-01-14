@@ -1,0 +1,56 @@
+.placeholderStyle{
+    color: rgb(189, 189, 189);
+}
+.viewOne{
+    display: flex;
+    background-color: rgb(0, 224, 121);
+    height: 100rpx;
+    width: 100%;
+    justify-content: space-around;
+    vertical-align: center;
+}
+.logoImage{
+    width: 100rpx;
+    height: 100rpx;
+    margin-left: 30rpx;
+}
+.viewSearch{
+    display: flex;
+    margin: 0 20rpx;
+}
+.searchImg{
+    width: 32rpx;
+    height: 29rpx;
+    align-self: center;
+    margin-right: -40rpx;
+    z-index: 2;
+}
+.searchInput{
+    height: 70rpx;
+    background-color: white;
+    border-radius: 50rpx;
+    font-size: 30rpx;
+    color: black;
+    padding-left: 50rpx;
+    align-self: center;
+}
+.choosePosition{
+    height: 70rpx;
+    min-width: 140rpx;
+    display: inline-block;
+    background-color: rgb(2, 180, 98);
+    border-radius: 50rpx;
+    padding: 0 10rpx;
+    align-self:center;
+}
+.positionImg{
+    align-self: center;
+    width: 18rpx;
+    height: 34rpx;
+    margin: 0 10rpx;
+}
+.positionText{
+    line-height: 70rpx;
+    align-self: center;
+    padding-right: 10rpx;
+}

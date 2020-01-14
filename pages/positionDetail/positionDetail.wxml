@@ -1,0 +1,23 @@
+<import src="../commonView/positonInfo-template/positonInfo-template.wxml" />
+<import src="../commonView/companyInfo-template/companyInfo-template.wxml" />
+<view class="viewContainer">
+    <view class="viewOne">
+        <template is="positionInfo" data="{{...positionInfo}}"/>
+    </view>
+    <view class="viewTwo">
+        <text>职位描述</text>
+        <view class="positionDetail">
+            <text>岗位职责：</text>
+            <view></view>
+            <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{positionInfo.positionRequire}}</text>
+            <view></view>
+            <text>任职要求：</text>
+            <view></view>
+            <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{positionInfo.positionType}}</text>
+        </view>
+    </view>
+    <view class="fixed">
+        <button bindtap="collection" class="fixed-button">收藏</button>
+        <button bindtap="delivery" class="fixed-button">投递</button>
+    </view>
+</view>

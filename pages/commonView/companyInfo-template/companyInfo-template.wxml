@@ -1,0 +1,31 @@
+<template name="companyInfo">
+    <view class="companyContainer">
+        <view class="companyEach"
+              catchtap="detailCompany"
+              bindlongpress="deleteResume"
+              data-positionid="{{positionId}}"
+              data-action = "{{detailAction}}"
+              data-usercvid="{{resumeId}}"
+        >
+            <image class="companyIcon" src="{{companyLogo}}"></image>
+            <view class="viewRight">
+                <view class="companyInfo">
+                    <view class="companyView">
+                        <text style="font-weight: bold;">{{positionName}}</text>
+                        <text style="font-weight: lighter;font-size: 16px;">{{companyName}}</text>
+                    </view>
+                    <view wx:if="{{!!positionLabel == true}}"
+                          wx:for="{{positionLabel}}"
+                    >
+                        <text class="positionLabel" style="{{index == 0 ? 'background-color:rgb(255, 59, 48)' : 'background-color: rgb(254, 148, 0)'}}">{{item}}</text>
+                    </view>
+                </view>
+                <view class="positionView">
+                    <image class="positionIcon" src="/images/icons/dingwei.png"></image>
+                    <text style="font-weight: lighter;font-size: 16px;">{{positionArea}} {{positionDuration}}</text>
+                </view>
+            </view>
+            <text style="padding: 10rpx;display: flow;float: right">{{publishTime}}</text>
+        </view>
+    </view>
+</template>

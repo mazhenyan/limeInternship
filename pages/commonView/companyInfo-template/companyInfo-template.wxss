@@ -1,0 +1,79 @@
+.companyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32rpx;
+}
+.companyEach{
+    width: 90%;
+    display: flex;
+    background-color: white;
+    border-radius: 10rpx;
+    padding: 10rpx;
+    margin: 15rpx 0;
+    justify-content: space-between;
+}
+.companyIcon{
+    height: 100rpx;
+    width: 100rpx;
+    padding: 20rpx;
+    margin: 0 10rpx;
+}
+.viewRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 2;
+}
+.positionView{
+    display: flex;
+    align-items: center;
+}
+.positionIcon{
+    width: 17rpx;
+    height: 26rpx;
+    margin-right: 10rpx;
+}
+.positionLabel{
+    margin: 10rpx 5rpx;
+    border-radius: 10rpx;
+    background-color: rgb(254, 148, 0);
+    padding: 5rpx;
+}
+.companyInfo{
+    display: flex;
+    /*justify-content: space-around;*/
+    padding: 10rpx 0;
+}
+.companyView{
+    display: flex;
+    flex-direction: column;
+}
+.noneCompanyInfo{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    width: 90%;
+    align-self: center;
+    border-radius: 30rpx;
+}
+.noneInfo{
+    display: flex;
+    color: rgb(153, 153, 153);
+    font-size: 24rpx;
+    height: 114rpx;
+    margin-top: 150rpx;
+    align-items: center;
+}
+.noneImg{
+    height: 100%;
+    width: 114rpx;
+    margin-right: 20rpx;
+}
+.noneBtn{
+    width: 350rpx;
+    background-color: rgb(0, 224, 121);
+    color: white;
+    margin: 100rpx 0;
+}

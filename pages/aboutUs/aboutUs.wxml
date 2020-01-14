@@ -1,0 +1,15 @@
+<view>
+    <image class="ablutUsBg" src="/images/login/aboutUs.png"></image>
+    <view class="abloutInfo">
+        <view class="aboutUsTop">
+            <image class="aboutUsLogo" src="/images/icons/practiceLogo.png"></image>
+            <text style="color: rgb(0, 224, 121);margin-top: 20rpx">青柠实习</text>
+        </view>
+        <view class="aboutUsText">
+            <text>
+                <text style="visibility: hidden;">空格</text>青柠实习小程序由Coocaa Club开发完成。
+                <text style="visibility: hidden;">空格</text>青柠实习小程序是一款大学生找实习（互联网垂直方向）的小程序，连接大学生和企业，是一个专门为大学生设计的实习生招聘平台。它汇聚了各大企业的靠谱实习，帮助大学生一站式完成搜索实习信息、投递简历等的过程，致力于提供更多更好的职业机会。
+            </text>
+        </view>
+    </view>
+</view>

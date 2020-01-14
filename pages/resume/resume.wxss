@@ -1,0 +1,54 @@
+@import "../commonView/userInfo-template/userInfo-template.wxss";
+.resumeContainer{
+    background-color: rgb(241, 241, 241);
+    border-top-left-radius: 100rpx;
+    margin-top: -33rpx;
+    display: flex;
+    flex-direction: column;
+    padding: 50rpx 0;
+    font-size: 32rpx;
+}
+.resumeUserInfo{
+    background-color: white;
+    width: 90%;
+    border-radius: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20rpx;
+}
+.resumeBar{
+    display: flex;
+    height: 100rpx;
+    align-items: center;
+    border-bottom: 2rpx solid rgb(220, 220, 220);
+}
+.resumeBarIcon{
+    height: 72rpx;
+    width: 72rpx;
+}
+.resumeInfoContainer{
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+}
+.resumeEach{
+    height: 70rpx;
+    padding: 0 20rpx;
+    border-bottom: 2rpx solid rgb(220, 220, 220);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.uplode{
+    justify-content: space-between;
+}
+.uplodeFont{
+    color: rgb(0, 224, 121);
+    padding: 0 20rpx;
+}
+.rightIcon{
+    width: 12rpx;
+    height: 20rpx;
+    padding: 0 10rpx;
+}

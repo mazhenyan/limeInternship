@@ -1,0 +1,5 @@
+.viewFour{
+    padding: 0 10rpx;
+    margin-top: 20rpx;
+    background-color: white;
+}

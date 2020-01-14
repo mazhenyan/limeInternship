@@ -1,0 +1,12 @@
+.viewTwo{
+    width: 100%;
+    background-color: white;
+}
+.swiper{
+    height: 300rpx;
+    padding:15rpx 40rpx;
+}
+swiper-item > image{
+    height: 300rpx;
+    width: 668rpx;
+}

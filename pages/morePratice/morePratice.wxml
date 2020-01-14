@@ -1,0 +1,11 @@
+<import src="../commonView/positonInfo-template/positonInfo-template.wxml" />
+<view wx:if="{{showNone == false}}">
+    <view style="font-weight: bold;margin-left: 20rpx;font-size: 20px;">更多信息</view>
+    <block wx:for="{{praticeInfo}}">
+        <template is="positionInfo" data="{{...item}}"/>
+    </block>
+</view>
+
+<view wx:if="{{showNone == true}}">
+    <text>没有有关信息</text>
+</view>

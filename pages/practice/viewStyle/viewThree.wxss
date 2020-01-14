@@ -1,0 +1,30 @@
+.viewThree{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.eachIcon{
+    display: flex;
+    flex-direction: column;
+    padding: 15rpx;
+    align-items: center;
+    justify-content: center;
+}
+.eachIcon > text{
+    color: rgb(254, 165, 41);
+    font-size: 32rpx;
+}
+.eachIcon > view{
+    height: 100rpx;
+    width: 100rpx;
+    background-color: rgb(205, 244, 212);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.eachIcon > view > image{
+    height: 48rpx;
+    width: 48rpx;
+}

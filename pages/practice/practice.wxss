@@ -1,0 +1,13 @@
+@import "./viewStyle/viewOne.wxss";
+@import "./viewStyle/viewTwo.wxss";
+@import "./viewStyle/viewThree.wxss";
+@import "./viewStyle/viewFour.wxss";
+@import "./viewStyle/viewFour.wxss";
+@import "../commonView/positonInfo-template/positonInfo-template.wxss";
+
+
+.viewContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+}

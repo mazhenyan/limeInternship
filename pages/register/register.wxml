@@ -1,0 +1,42 @@
+<view>
+    <view class="viewImg">
+        <image class="completeImgBg" src="/images/login/registerBg.png"></image>
+        <image class="completeImgAvatar" src="/images/icons/practiceLogo.png"></image>
+    </view>
+    <form action="">
+        <view class="formContainer">
+            <view
+                    wx:for="{{registerData}}"
+                    wx:key="{{item.id}}"
+                    class="inputView">
+                <picker
+                        wx:if="{{item.id == 4}}"
+                        mode="date"
+                        value="{{userInfoGradtime}}"
+                        start="2015-09-01"
+                        data-id="{{item.id}}"
+                        bindchange="getInput">
+                    <text>毕业时间</text>
+                    <input
+                            bindblur="getInput"
+                            data-id="{{item.id}}"
+                            value="{{item.value}}"
+                            class="inputItem"
+                            type="text" />
+                </picker>
+                <text wx:if="{{item.id != 4}}">{{item.info}}</text>
+                <input
+                        wx:if="{{item.id != 4}}"
+                        bindblur="getInput"
+                        data-id="{{item.id}}"
+                        value="{{item.value}}"
+                        class="inputItem"
+                        type="text" />
+            </view>
+            <button
+                    class="delivery"
+                    bindtap="tapComfirm"
+            >确认</button>
+        </view>
+    </form>
+</view>

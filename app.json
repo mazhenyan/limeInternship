@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/practice/practice",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/position/position",
+    "pages/positionDetail/positionDetail",
+    "pages/aboutUs/aboutUs",
+    "pages/resume/resume",
+    "pages/deliveryResume/deliveryResume",
+    "pages/myCollection/myCollection",
+    "pages/register/register",
+    "pages/morePratice/morePratice"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00E079",
+    "navigationBarTitleText": "青柠实习",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/practice/practice",
+        "text": "实习",
+        "iconPath": "./images/icons/dhtb3.png",
+        "selectedIconPath": "./images/icons/dhtb4.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./images/icons/dhtb2.png",
+        "selectedIconPath": "./images/icons/dhtb4.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,10 @@
+@import "../commonView/userInfo-template/userInfo-template.wxss";
+@import "../commonView/companyInfo-template/companyInfo-template.wxss";
+.collectionContainer{
+    background-color: rgb(241, 241, 241);
+    border-top-left-radius: 100rpx;
+    margin-top: -33rpx;
+    display: flex;
+    flex-direction: column;
+    padding: 50rpx 0;
+}

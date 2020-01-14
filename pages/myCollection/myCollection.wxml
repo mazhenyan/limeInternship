@@ -1,0 +1,21 @@
+<import src="../commonView/userInfo-template/userInfo-template.wxml" />
+<import src="../commonView/companyInfo-template/companyInfo-template.wxml" />
+<template is="userInfo" />
+<text>收藏</text>
+<view class="collectionContainer">
+    <block wx:for="{{resumeInfo}}">
+        <template is="companyInfo" data="{{...item}}"/>
+    </block>
+    <view wx:if="{{resumeInfo.length == 0}}"
+          class="noneCompanyInfo">
+        <view class="noneInfo">
+            <image class="noneImg" src="/images/icons/nothing.png"></image>
+            <view>
+                <text style="display: block;">这里空空如也哦！</text>
+                <text>快去看看职位吧</text>
+            </view>
+        </view>
+
+        <button bindtap="goIndex" class="noneBtn">去看看职位</button>
+    </view>
+</view>

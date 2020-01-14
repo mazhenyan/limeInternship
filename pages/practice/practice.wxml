@@ -1,0 +1,49 @@
+<import src="../commonView/positonInfo-template/positonInfo-template.wxml" />
+<view class="viewContainer">
+    <view class="viewOne">
+        <view class="logoImage">
+            <image style="height: 100%;width: 100%;" src="/images/icons/practiceLogo.png"></image>
+        </view>
+        <view class="viewSearch">
+            <image class="searchImg" src="/images/icons/search.png"></image>
+            <input class="searchInput" type="search" placeholder-class="placeholderStyle" bindconfirm="onComfirm" bindinput="getUserInput"  placeholder="输入你想找的实习" />
+        </view>
+        <view class="choosePosition">
+            <image class="positionImg" src="/images/icons/position.png"></image>
+            <text bindtap="choosePosition" class="positionText">{{choosePlace}}</text>
+        </view>
+    </view>
+    <view class="viewTwo">
+        <swiper indicator-dots='true'indicator-active-color="black" indicator-color="white" autoplay="{{false}}" interval="5000" class="swiper">
+            <swiper-item>
+                <image src="/images/swiperImg/swiper.png"></image>
+            </swiper-item>
+            <swiper-item><image src="/images/swiperImg/swiper.png"></image></swiper-item>
+            <swiper-item><image src="/images/swiperImg/swiper.png"></image></swiper-item>
+        </swiper>
+    </view>
+    <view class="viewThree">
+        <view
+                wx:for="{{showInfo}}"
+                wx:key="{{item.id}}"
+                data-id="{{item.id}}"
+                class="eachIcon"
+                bindtap="toMore"
+        >
+            <view><image src="{{item.img}}"></image></view>
+            <text>{{item.info}}</text>
+        </view>
+    </view>
+    <view class="viewFour">
+        <text style="font-weight: bold;margin-left: 20rpx;font-size: 20px;">职位列表</text>
+        <block wx:for="{{praticeInfo}}">
+            <template is="positionInfo" data="{{...item}}"/>
+        </block>
+        <view style="text-align: center;" wx:if="{{praticeInfo.length==0}}">
+            <text>该地区没有有关信息</text>
+        </view>
+        <view
+                style="border-bottom: 1px solid rgb(224, 224, 224)"
+        ></view>
+    </view>
+</view>

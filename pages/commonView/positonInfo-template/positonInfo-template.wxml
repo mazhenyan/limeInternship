@@ -1,0 +1,13 @@
+<template name="positionInfo">
+    <view bindtap="toDetailPratice" class="positionContainer" data-positionid="{{positionId}}" data-companid="{{companyId}}">
+        <view class="positionEach">
+            <image class="companyIcon" src="{{companyLogo}}"></image>
+            <view class="companyInfo">
+                <text style="font-weight: bold;">{{positionName}}</text>
+                <text style="font-weight: lighter;font-size: 16px;">{{companyName}}</text>
+                <text style="font-weight: lighter;font-size: 16px;">{{companyArea}} {{positionDuration}}</text>
+            </view>
+            <text style="padding: 10rpx 0;">{{publishTime}}</text>
+        </view>
+    </view>
+</template>

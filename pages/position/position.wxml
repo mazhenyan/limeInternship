@@ -1,0 +1,28 @@
+<view>
+    <view>
+        <view class="title border-topbottom">当前城市</view>
+        <view>
+            <view class="button">
+                {{presentCity}}
+            </view>
+        </view>
+    </view>
+    <view class="clear"></view>
+    <view>
+        <view class="title border-topbottom">热门城市</view>
+        <view class="button-list">
+            <view class="button-wrapper" wx:for="{{hotCities}}" key="{{item.id}}">
+                <view bindtap="chooseCity" data-city="{{item.name}}" class="button">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="clear"></view>
+    <view>
+        <view wx:for="{{cities}}" key="{{index}}">
+            <view class="title border-topbottom">{{index}}</view>
+            <view bindtap="chooseCity" data-city="{{eachCity.name}}" class="border-bottom" wx:for="{{item}}" wx:for-item="eachCity">
+                {{eachCity.name}}
+            </view>
+        </view>
+    </view>
+</view>

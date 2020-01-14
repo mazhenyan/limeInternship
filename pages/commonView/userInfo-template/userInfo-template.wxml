@@ -1,0 +1,9 @@
+<template name="userInfo">
+    <view class="userInfoView">
+        <image class="userInfoBg" src="/images/login/userBg.png"></image>
+        <view class="userBaseInfo">
+            <image class="userAvatar" src="/images/icons/practiceLogo.png"></image>
+            <text class="userNickName"></text>
+        </view>
+    </view>
+</template>

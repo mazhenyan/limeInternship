@@ -1,0 +1,49 @@
+<import src="../commonView/userInfo-template/userInfo-template.wxml" />
+<template is="userInfo" />
+
+<view class="resumeContainer">
+    <view class="resumeUserInfo">
+        <view class="resumeBar">
+            <image class="resumeBarIcon" src="/images/icons/userInfo.png"></image>
+            <text style="font-weight: bolder;">用户信息</text>
+        </view>
+        <view class="resumeInfoContainer">
+            <view
+                    wx:for="{{userData}}"
+                    class="resumeEach">
+                <text style="font-weight: bolder;">{{item.info}}</text>
+                <text>{{item.value}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="resumeUserInfo">
+        <view class="resumeBar uplode">
+            <view class="resumeBar">
+                <image class="resumeBarIcon" src="/images/icons/fujian.png"></image>
+                <text style="font-weight: bolder;">附件简历</text>
+            </view>
+            <text
+                    bindtap="uplodeResume"
+                    class="uplodeFont">上传</text>
+        </view>
+        <view class="resumeInfoContainer">
+            <view class="resumeEach"
+                    wx:if="{{userResume.length == 0}}">
+                <text>目前为止还没有简历哦</text>
+            </view>
+            <view wx:else>
+                <view wx:for="{{userResume}}"
+                      bindtap="downlodeResume"
+                      bindlongpress="deleteResume"
+                      data-userCvId="{{item.userCvId}}"
+                      data-url="{{item.userCvPdf}}"
+                      class="resumeEach">
+                    <text style="font-weight: bolder;">简历{{index+1}}</text>
+                    <view class="resumeEach">
+                        <image class="rightIcon" src="/images/icons/right.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

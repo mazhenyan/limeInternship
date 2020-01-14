@@ -1,0 +1,25 @@
+<view class="viewContainer">
+    <view class="viewTop">
+        <text
+                class="viewTopFont"
+                catchtap="fillUserInfo">{{defaultName}}</text>
+        <view class="viewTopImgContainer"
+              catchtap="fillUserInfo">
+            <image class="viewTopImg" src="{{defaultAvatar}}"></image>
+        </view>
+    </view>
+    <view class="viewItem">
+        <view
+                wx:for="{{userChooseList}}"
+                wx:key="{{item.id}}"
+                class="viewItemContainer"
+                data-id="{{item.id}}"
+                wx:if="{{item.show}}"
+                catchtap="handleTap"
+        >
+            <image class="viewItemIcon" src="{{item.icon}}"></image>
+            <text>{{item.info}}</text>
+            <image class="viewItemRightIcon" src="/images/icons/right.png"></image>
+        </view>
+    </view>
+</view>
